@@ -5,11 +5,11 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
 const FooterStyle = styled.footer`
   display: flex;
-  justify-content: center;
-  padding: 3rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 3rem 0.6rem 3rem;
   background-color: #379683;
   color: white;
-  position: relative;
   a {
     color: inherit;
   }
@@ -87,13 +87,10 @@ const SocialMedia = () => (
 )
 
 const CopyrightNote = styled.div`
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0.4rem;
-  left: 0;
-  right: 0;
+  padding-top: 0.4rem;
   span {
     margin: 0 0.2rem;
   }
