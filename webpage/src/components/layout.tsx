@@ -26,7 +26,6 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => (
   <>
-    <Header />
     <Main>{children}</Main>
     <Footer />
   </>

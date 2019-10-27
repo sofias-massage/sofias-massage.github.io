@@ -1,11 +1,12 @@
 import styled from "@emotion/styled"
+import { Link } from "gatsby"
 
 export const Title = styled.h1`
   width: 100%;
   text-align: center;
 `
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   flex-grow: 0;
   padding: 0.5rem 1rem;
   box-sizing: border-box;
@@ -15,6 +16,8 @@ export const Button = styled.button`
   border: 3px solid #379683;
   background: none;
   max-width: 10rem;
+  text-decoration: none;
+  text-align: center;
   &:hover {
     cursor: pointer;
   }
