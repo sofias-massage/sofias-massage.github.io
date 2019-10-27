@@ -5,27 +5,28 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
 const FooterStyle = styled.footer`
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   padding: 3rem;
-  justify-content: space-between;
   background-color: #379683;
   color: white;
   position: relative;
-  & > span {
-    position: absolute;
-    bottom: 0.4rem;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
   a {
     color: inherit;
   }
 `
 
-const ContactContainer = styled.div`
+const ContactWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
   flex: 1;
+  justify-content: space-between;
+  max-width: 80rem;
+`
+
+const ContactContainer = styled.div`
+  flex-grow: 0;
   min-width: 12rem;
+  max-width: 20rem;
   margin: 1rem 0;
   h4 {
     margin-bottom: 0.4rem;
@@ -85,16 +86,46 @@ const SocialMedia = () => (
   </ContactContainer>
 )
 
+const CopyrightNote = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4rem;
+  left: 0;
+  right: 0;
+  span {
+    margin: 0 0.2rem;
+  }
+  .dot {
+    background-color: white;
+    height: 0.2rem;
+    width: 0.2rem;
+    border-radius: 50%;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    .dot {
+      display: none;
+    }
+  }
+`
+
 const Footer = () => (
   <FooterStyle>
-    <Email />
-    <Phone />
-    <Adress />
-    <SocialMedia />
-    <span>
-      Copyright © {new Date().getFullYear()} Sofias Massage – Skapad av Anton
-      Levholm
-    </span>
+    <ContactWrapper>
+      <Email />
+      <Phone />
+      <Adress />
+      <SocialMedia />
+    </ContactWrapper>
+    <CopyrightNote>
+      <span>Copyright © {new Date().getFullYear()} Sofias Massage</span>
+      <span className="dot" />
+      <span>
+        Skapad av <a href="https://github.com/Levis92">Anton Levholm</a>
+      </span>
+    </CopyrightNote>
   </FooterStyle>
 )
 
