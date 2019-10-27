@@ -1,5 +1,6 @@
 import React from "react"
 import TreatmentLayout from "../components/treatment-layout"
+import SEO from "../components/seo"
 const massageImg = require("../images/toa-heftiba-a9pFSC8dTlo-unsplash.jpg")
 
 const KlassiskMassagePage = () => (
@@ -8,6 +9,7 @@ const KlassiskMassagePage = () => (
     image={massageImg}
     imageAlt="Klassisk massage"
   >
+    <SEO title="Klassisk massage" />
     <p>
       Behandligen anpassas efter dig och dina önskemål. Den svenska klassiska
       massagen har många fördelar och är en behandling som verkar på djupet. Den

@@ -1,5 +1,6 @@
 import React from "react"
 import TreatmentLayout from "../components/treatment-layout"
+import SEO from "../components/seo"
 const lashLiftImg = require("../images/aleksandra-rupar-Wude2F3CMss-unsplash.jpg")
 
 const LashliftPage = () => (
@@ -8,6 +9,7 @@ const LashliftPage = () => (
     image={lashLiftImg}
     imageAlt="Lashlift med keratinbehandling"
   >
+    <SEO title="Lashlift med keratinbehandling" />
     <p>
       <strong>Vad är lashlift? Alla kanske inte vet det. </strong>
       Lash Lift är en franspermanent som lyfter och ger volym till dina fransar.

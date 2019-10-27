@@ -1,5 +1,6 @@
 import React from "react"
 import TreatmentLayout from "../components/treatment-layout"
+import SEO from "../components/seo"
 const lashExtensionImg = require("../images/sharon-mccutcheon-y_VhmHCZ8FY-unsplash.jpg")
 
 const FransforlangningPage = () => (
@@ -8,6 +9,7 @@ const FransforlangningPage = () => (
     image={lashExtensionImg}
     imageAlt="Fransförlängning, singelfransar"
   >
+    <SEO title="Fransförlängning, singelfransar" />
     <p>
       När man gör singelfransar så går det till så att man limmar fast en frans
       på varje egen frans. Du kan själv välja längd på fransarna. Och jag
