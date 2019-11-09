@@ -5,6 +5,7 @@ import { Section, Title } from "./elements"
 import { BokaDirekt } from "./boka-direkt"
 import Logo from "./logo"
 import { Link } from "gatsby"
+import { treatments } from "./treatments"
 
 const Image = styled.img`
   width: 100%;
@@ -24,14 +25,65 @@ const Header = styled.header`
   }
 `
 
-interface TreatmentLayoutProps {
-  children: ReactNode;
-  title: string;
-  image: string;
-  imageAlt: string;
+const LinksContainer = styled.article`
+  h4 {
+    margin-bottom: 0.8rem;
+  }
+`
+
+const TreatmentList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  &,
+  li {
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:last-child) {
+    margin-right: 0.4rem;
+    &::after {
+      content: ",";
+    }
+  }
+  a {
+    color: #379683;
+  }
+`
+
+const TreatmentLinks = ({ currentTreatment }: { currentTreatment: string }) => {
+  const links = treatments.filter(
+    treatment => treatment.name !== currentTreatment
+  )
+  return (
+    <LinksContainer>
+      <nav>
+        <h4>Andra behandlingar</h4>
+        <TreatmentList>
+          {links.map(link => (
+            <li>
+              <Link to={link.link}>{link.name}</Link>
+            </li>
+          ))}
+        </TreatmentList>
+      </nav>
+    </LinksContainer>
+  )
 }
 
-const TreatmentLayout = ({ children, title, image, imageAlt }: TreatmentLayoutProps) => (
+interface TreatmentLayoutProps {
+  children: ReactNode
+  title: string
+  image: string
+  imageAlt: string
+}
+
+const TreatmentLayout = ({
+  children,
+  title,
+  image,
+  imageAlt,
+}: TreatmentLayoutProps) => (
   <>
     <Header>
       <Link to="/">
@@ -44,6 +96,7 @@ const TreatmentLayout = ({ children, title, image, imageAlt }: TreatmentLayoutPr
         <Title>{title}</Title>
         {children}
         <BokaDirekt.Green />
+        <TreatmentLinks currentTreatment={title} />
       </Section>
     </Layout>
   </>

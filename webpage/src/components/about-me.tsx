@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Section, Title } from "./elements"
+import { Section, Title, SubTitle } from "./elements"
 import GoogleMap from "./google-map"
 
 const Container = styled.div`
@@ -21,10 +21,6 @@ const Article = styled.article`
     width: 95%;
     max-width: 20rem;
   }
-`
-
-const SubTitle = styled.h3`
-  margin-bottom: 0.8rem;
 `
 
 const ProfileImage = styled.img`

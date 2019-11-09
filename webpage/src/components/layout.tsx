@@ -9,7 +9,6 @@ import React from "react"
 import styled from "@emotion/styled"
 import { ReactNode } from "react"
 
-import Header from "./header"
 import "./layout.css"
 import Footer from "./footer"
 

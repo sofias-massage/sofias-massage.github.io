@@ -6,6 +6,10 @@ export const Title = styled.h1`
   text-align: center;
 `
 
+export const SubTitle = styled.h3`
+  margin-bottom: 0.8rem;
+`
+
 export const Button = styled(Link)`
   flex-grow: 0;
   padding: 0.5rem 1rem;

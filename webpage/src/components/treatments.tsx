@@ -15,7 +15,7 @@ interface TreatmentProps {
   link: string;
 }
 
-const treatments: TreatmentProps[] = [
+export const treatments: TreatmentProps[] = [
   {
     name: "Klassisk massage",
     shortText: "Den svenska klassiska massagen har många fördelar och är en behandling som verkar på djupet. Den ökar blodtillförseln till musklerna vilket hjälper musklerna att slappna av.",

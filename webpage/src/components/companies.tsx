@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Title, Section } from "./elements"
+import { Title, Section, SubTitle } from "./elements"
 const image = require("../images/alan-caishan-cU53ZFBr3lk-unsplash.jpg")
 
 const Container = styled.div`
@@ -34,10 +34,6 @@ const Container = styled.div`
       max-width: 20rem;
     }
   }
-`
-
-const SubTitle = styled.h3`
-  margin-bottom: 0.8rem;
 `
 
 const Companies = () => (
