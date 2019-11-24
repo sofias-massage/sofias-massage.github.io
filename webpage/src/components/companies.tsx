@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { Title, Section, SubTitle } from "./elements"
-const image = require("../images/alan-caishan-cU53ZFBr3lk-unsplash.jpg")
+const image = require("../images/foretagsmassage.jpg")
 
 const Container = styled.div`
   display: flex;

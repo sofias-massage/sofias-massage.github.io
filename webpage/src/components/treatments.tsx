@@ -3,10 +3,10 @@ import styled from "@emotion/styled"
 
 import { Title, Button, Section } from "./elements"
 
-const lashLiftImg = require("../images/aleksandra-rupar-Wude2F3CMss-unsplash.jpg")
-const lashColorImg = require("../images/sharon-mccutcheon-Y1TGc43qSQo-unsplash.jpg")
-const massageImg = require("../images/toa-heftiba-a9pFSC8dTlo-unsplash.jpg")
-const lashExtensionImg = require("../images/sharon-mccutcheon-y_VhmHCZ8FY-unsplash.jpg")
+export const lashLiftImg = require("../images/lash_lift.jpg")
+export const lashColorImg = require("../images/farga_fransar_och_bryn.jpg")
+export const massageImg = require("../images/klassisk_massage.jpg")
+export const lashExtensionImg = require("../images/fransforlangning.jpg")
 
 interface TreatmentProps {
   name: string;
