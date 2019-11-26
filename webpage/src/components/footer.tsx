@@ -2,6 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import Wellness from "./wellness"
 
 const FooterStyle = styled.footer`
   display: flex;
@@ -109,21 +110,24 @@ const CopyrightNote = styled.div`
 `
 
 const Footer = () => (
-  <FooterStyle>
-    <ContactWrapper>
-      <Email />
-      <Phone />
-      <Adress />
-      <SocialMedia />
-    </ContactWrapper>
-    <CopyrightNote>
-      <span>Copyright © {new Date().getFullYear()} Sofias Massage</span>
-      <span className="dot" />
-      <span>
-        Skapad av <a href="https://github.com/Levis92">Anton Levholm</a>
-      </span>
-    </CopyrightNote>
-  </FooterStyle>
+  <>
+    <Wellness />
+    <FooterStyle>
+      <ContactWrapper>
+        <Email />
+        <Phone />
+        <Adress />
+        <SocialMedia />
+      </ContactWrapper>
+      <CopyrightNote>
+        <span>Copyright © {new Date().getFullYear()} Sofias Massage</span>
+        <span className="dot" />
+        <span>
+          Skapad av <a href="https://github.com/Levis92">Anton Levholm</a>
+        </span>
+      </CopyrightNote>
+    </FooterStyle>
+  </>
 )
 
 export default Footer
