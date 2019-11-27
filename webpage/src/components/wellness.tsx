@@ -25,7 +25,16 @@ const items: Item[] = [
 
 const Image = styled.img`
   width: 250px;
-  margin: 0 1em;
+  margin: 0;
+`
+
+const Link = styled.a`
+  margin: 0 1rem;
+  @media (max-width: 571px) {
+    &:first-child {
+      margin-bottom: 1rem;
+    }
+  }
 `
 
 const FlexSection = styled(Section)`
@@ -38,9 +47,9 @@ const FlexSection = styled(Section)`
 const Wellness = () => (
   <FlexSection>
     {items.map(item => (
-      <a href={item.link}>
+      <Link href={item.link}>
         <Image key={item.link} src={item.image} alt={item.alt} />
-      </a>
+      </Link>
     ))}
   </FlexSection>
 )
