@@ -44,7 +44,7 @@ const FlexSection = styled(Section)`
   flex-wrap: wrap;
 `
 
-const Wellness = () => (
+const WellnessGrants = () => (
   <FlexSection>
     {items.map(item => (
       <Link href={item.link}>
@@ -54,4 +54,4 @@ const Wellness = () => (
   </FlexSection>
 )
 
-export default Wellness
+export default WellnessGrants

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import Wellness from "./wellness"
+import WellnessGrants from "./wellness-grants"
 
 const FooterStyle = styled.footer`
   display: flex;
@@ -111,7 +111,7 @@ const CopyrightNote = styled.div`
 
 const Footer = () => (
   <>
-    <Wellness />
+    <WellnessGrants />
     <FooterStyle>
       <ContactWrapper>
         <Email />
