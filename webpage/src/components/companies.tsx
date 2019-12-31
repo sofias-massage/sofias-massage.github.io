@@ -58,7 +58,7 @@ const Companies = () => (
         </p>
         <p>
           Varmt välkommen att{" "}
-          <a href="mailto:sofia@sofiasmassage.nu">höra av dig</a> till mig för
+          <a href="mailto:sofia@levholm.se">höra av dig</a> till mig för
           mer information.
         </p>
       </div>

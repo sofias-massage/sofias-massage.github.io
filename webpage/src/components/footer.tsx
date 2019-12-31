@@ -49,7 +49,7 @@ const IconList = styled.ul`
 const Email = () => (
   <ContactContainer>
     <h4>Mailadress</h4>
-    <a href="mailto:sofia@sofiasmassage.nu">sofia@sofiasmassage.nu</a>
+    <a href="mailto:sofia@levholm.se">sofia@levholm.se</a>
   </ContactContainer>
 )
 
