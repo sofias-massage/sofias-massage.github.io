@@ -17,7 +17,7 @@ jobs:
 
       # Install dependencies
       - name: npm ci
-        run: npm ci
+        run: npm install
 
       # Build
       - name: predeploy
