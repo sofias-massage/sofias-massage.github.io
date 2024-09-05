@@ -1,25 +1,27 @@
 import React from "react"
 import { Section } from "./elements"
 import styled from "@emotion/styled"
-const actiway = require("../images/actiway.jpg")
-const minFriskvard = require("../images/mf-banner-inv-250x100.jpg")
+const epassi = require("../images/Epassi-Logo-Primary-Color-RGB-3.png")
+const swish = require("../images/Swish-Logo-Primary-PNG.png")
 
 interface Item {
   image: string
   link: string
   alt: string
+  text?: string
 }
 
 const items: Item[] = [
   {
-    image: minFriskvard,
-    link: "https://minfriskvard.se/",
-    alt: "Friskvård genom Min Friskvård",
+    image: epassi,
+    link: "https://www.epassi.se/sv/",
+    alt: "Friskvård genom Epassi",
   },
   {
-    image: actiway,
-    link: "https://www.actiway.se",
-    alt: "Friskvård genom ActiWay",
+    image: epassi,
+    link: "https://www.swish.nu",
+    alt: "Betala med Swish",
+    text: "Endast betalning via Swish",
   },
 ]
 
@@ -29,10 +31,18 @@ const Image = styled.img`
 `
 
 const Link = styled.a`
-  margin: 0 1rem;
+  padding: 0 1rem;
+  &:first-child {
+    border-right: 1px solid rgba(0,0,0,.8);
+  }
   @media (max-width: 571px) {
     &:first-child {
-      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-right: none;
+      border-bottom: 1px solid rgba(0,0,0,.8);
+    }
+    &:not(:first-child) {
+      padding-top: 0.5rem;
     }
   }
 `
@@ -49,6 +59,7 @@ const WellnessGrants = () => (
     {items.map(item => (
       <Link href={item.link}>
         <Image key={item.link} src={item.image} alt={item.alt} />
+        {item.text && <p>{item.text}</p>}
       </Link>
     ))}
   </FlexSection>

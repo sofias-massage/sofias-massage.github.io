@@ -1,0 +1,39 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ develop ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Install dependencies
+      - name: npm ci
+        run: npm ci
+
+      # Build
+      - name: predeploy
+        run: npm run predeploy
+
+      # Set git user details
+      - name: Set git user details
+        run: |
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "$EMAIL"
+        env:
+          EMAIL: anton.badminton@gmail.com
+
+      # Deploy
+      - name: deploy
+        env:
+          GH_TOKEN: ${{secrets.SECRET_GITHUB_TOKEN}}
+
+        run: npm run deploy

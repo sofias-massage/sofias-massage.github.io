@@ -63,9 +63,9 @@ const Phone = () => (
 const Adress = () => (
   <ContactContainer>
     <h4>Adress</h4>
-    <span>Västra Gatan 72</span>
+    <span>Hantverkaregatan 4</span>
     <br />
-    <span>442 31, Kungälv</span>
+    <span>463 30 Lilla Edet</span>
   </ContactContainer>
 )
 
