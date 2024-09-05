@@ -15,16 +15,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Move to workdir
-        run: cd webpage
-
       # Install dependencies
       - name: npm ci
+        working-directory: ./webpage
         run: npm install
-
-      # Build
-      - name: predeploy
-        run: npm run predeploy
 
       # Set git user details
       - name: Set git user details
@@ -36,6 +30,7 @@ jobs:
 
       # Deploy
       - name: deploy
+        working-directory: ./webpage
         env:
           GH_TOKEN: ${{secrets.SECRET_GITHUB_TOKEN}}
 
