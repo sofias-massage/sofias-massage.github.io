@@ -1,0 +1,43 @@
+.image {
+  width: 100%;
+  height: 22rem;
+  max-height: 38vh;
+  border-radius: 0.4rem;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  & a {
+    text-decoration: none;
+  }
+}
+
+.linksContainer {
+  & h4 {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.treatmentList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  &,
+  & li {
+    padding: 0;
+    margin: 0;
+  }
+  & li:not(:last-child) {
+    margin-right: 0.4rem;
+    &::after {
+      content: ",";
+    }
+  }
+  & a {
+    color: #379683;
+  }
+}
