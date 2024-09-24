@@ -11,7 +11,7 @@ export const metadata = getMetaData({ title: 'Fransförlängning, singelfransar'
 const FransforlangningPage = () => (
   <TreatmentLayout
     title="Fransförlängning, singelfransar"
-    image={lashExtensionImg}
+    image={lashExtensionImg.src}
     imageAlt="Fransförlängning, singelfransar"
   >
     <p>

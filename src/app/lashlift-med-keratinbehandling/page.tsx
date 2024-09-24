@@ -11,7 +11,7 @@ export const metadata = getMetaData({ title: 'Lashlift med keratinbehandling', d
 const LashliftPage = () => (
   <TreatmentLayout
     title="Lashlift med keratinbehandling"
-    image={lashLiftImg}
+    image={lashLiftImg.src}
     imageAlt="Lashlift med keratinbehandling"
   >
     <p>

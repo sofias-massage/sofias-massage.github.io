@@ -4,7 +4,6 @@ import { Section, Title } from "./elements"
 import { BokaDirekt } from "./boka-direkt"
 import Logo from "./logo"
 import { treatments } from "./treatments"
-import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import styles from './treatment-layout.module.css'
 
@@ -31,7 +30,7 @@ const TreatmentLinks = ({ currentTreatment }: { currentTreatment: string }) => {
 interface TreatmentLayoutProps {
   children: ReactNode
   title: string
-  image: StaticImageData
+  image: string
   imageAlt: string
 }
 
@@ -49,7 +48,7 @@ const TreatmentLayout = ({
     </header>
     <Layout>
       <Section>
-        <Image className={styles.image} src={image} alt={imageAlt} />
+        <img className={styles.image} src={image} alt={imageAlt} />
         <Title>{title}</Title>
         {children}
         <BokaDirekt.Green />

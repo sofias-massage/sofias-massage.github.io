@@ -1,14 +1,13 @@
 import React from "react"
 import { Title, Section, SubTitle } from "./elements"
 import image from "../images/foretagsmassage.jpg"
-import Image from "next/image"
 import styles from './companies.module.css'
 
 const Companies = () => (
   <Section>
     <Title>Företagsmassage</Title>
     <div className={styles.container}>
-      <Image src={image} alt="Massagebehandling" />
+      <img src={image.src} alt="Massagebehandling" />
       <div>
         <SubTitle>
           Varför ska du och ditt företag investera i företagsmassage?

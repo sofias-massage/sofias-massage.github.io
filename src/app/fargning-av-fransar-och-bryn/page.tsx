@@ -11,7 +11,7 @@ export const metadata = getMetaData({ title: 'Färgning av fransar och bryn', de
 const FargningAvFransarPage = () => (
   <TreatmentLayout
     title="Färgning av fransar och bryn"
-    image={lashColorImg}
+    image={lashColorImg.src}
     imageAlt="Färgning av fransar och bryn"
   >
     <p>

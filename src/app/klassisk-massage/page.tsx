@@ -11,7 +11,7 @@ export const metadata = getMetaData({ title: 'Klassisk massage', description });
 const KlassiskMassagePage = () => (
   <TreatmentLayout
     title="Klassisk massage"
-    image={massageImg}
+    image={massageImg.src}
     imageAlt="Klassisk massage"
   >
     <p>
