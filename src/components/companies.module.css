@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding-top: 1rem;
   & a {
-    color: #379683;
+    color: var(--color-primary);
   }
 
   & div,

@@ -45,5 +45,5 @@
 
 .divider {
   height: 6px;
-  background-color: #379683;
+  background-color: var(--color-primary);
 }
