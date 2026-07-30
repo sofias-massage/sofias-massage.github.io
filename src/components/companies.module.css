@@ -1,32 +1,36 @@
 .container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-  & a {
-    color: var(--color-primary);
-  }
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    & a {
+        color: var(--color-primary);
+    }
 
-  & div,
-  & img {
-    width: 45%;
-  }
-
-  & img {
-    object-fit: cover;
-    object-position: top;
-    width: 45%;
-    max-height: 24rem;
-    height: auto;
-    border-radius: 1.2rem;
-  }
-
-  @media (max-width: 800px) {
-    flex-direction: column;
-    align-items: center;
     & div,
     & img {
-      width: 95%;
-      max-width: 20rem;
+        width: 48%;
     }
-  }
+
+    & img {
+        object-fit: cover;
+        object-position: top;
+        width: 48%;
+        max-height: 24rem;
+        height: auto;
+        border-radius: 1.2rem;
+    }
+
+    & p:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+        & div,
+        & img {
+            width: 100%;
+            max-width: 22rem;
+        }
+    }
 }

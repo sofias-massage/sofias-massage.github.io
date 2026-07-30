@@ -1,36 +1,54 @@
 .title {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 .subTitle {
-  margin-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 .button {
-  flex-grow: 0;
-  padding: 0.5rem 1rem;
-  box-sizing: border-box;
-  outline: none;
-  border-radius: 0.4rem;
-  color: var(--color-primary);
-  font-size: 0.85rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  border: 3px solid var(--color-primary);
-  background: none;
-  max-width: 10rem;
-  text-decoration: none;
-  text-align: center;
-  &:hover, &:active {
-    cursor: pointer;
-    color: white;
-    background-color: var(--color-primary);
-  }
+    flex-grow: 0;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 0.4rem;
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        Segoe UI,
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        Fira Sans,
+        Droid Sans,
+        Helvetica Neue,
+        sans-serif;
+    border: 3px solid var(--color-primary);
+    background: none;
+    max-width: 10rem;
+    text-decoration: none;
+    text-align: center;
+    &:hover,
+    &:active {
+        cursor: pointer;
+        color: white;
+        background-color: var(--color-primary);
+    }
+    &:active {
+        background-color: var(--color-primary-active);
+        border-color: var(--color-primary-active);
+    }
 }
 
 .section {
-  margin-bottom: 4rem;
+    @media (max-width: 800px) {
+        max-width: 22rem;
+        margin: auto;
+    }
 }

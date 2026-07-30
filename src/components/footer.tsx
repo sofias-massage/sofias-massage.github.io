@@ -1,22 +1,22 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import WellnessGrants from "./wellness-grants"
-import styles from './footer.module.css'
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import WellnessGrants from "./wellness-grants";
+import styles from "./footer.module.css";
 
 const Email = () => (
   <div className={styles.contactContainer}>
     <h4>Mailadress</h4>
     <a href="mailto:sofia@levholm.se">sofia@levholm.se</a>
   </div>
-)
+);
 
 const Phone = () => (
   <div className={styles.contactContainer}>
     <h4>Telefon</h4>
     <a href="tel:+46760658237">076 - 065 82 37</a>
   </div>
-)
+);
 
 const Adress = () => (
   <div className={styles.contactContainer}>
@@ -25,7 +25,7 @@ const Adress = () => (
     <br />
     <span>463 30 Lilla Edet</span>
   </div>
-)
+);
 
 const SocialMedia = () => (
   <div className={styles.contactContainer}>
@@ -43,7 +43,7 @@ const SocialMedia = () => (
       </li>
     </ul>
   </div>
-)
+);
 
 const Footer = () => (
   <>
@@ -64,6 +64,6 @@ const Footer = () => (
       </div>
     </footer>
   </>
-)
+);
 
-export default Footer
+export default Footer;

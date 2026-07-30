@@ -1,10 +1,10 @@
 .mapContainer {
-  border: 0;
-  width: 45%;
-  height: 22.5rem;
+    border: 0;
+    border-radius: 1.2rem;
+    height: 30rem;
+    width: 100%;
 
-  @media (max-width: 800px) {
-    width: 95%;
-    max-width: 20rem;
-  }
+    @media (max-width: 800px) {
+        height: 20rem;
+    }
 }

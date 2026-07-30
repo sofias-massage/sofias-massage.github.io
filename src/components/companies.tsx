@@ -9,25 +9,14 @@ const Companies = () => (
     <div className={styles.container}>
       <img src={image.src} alt="Massagebehandling" />
       <div>
-        <SubTitle>
-          Varför ska du och ditt företag investera i företagsmassage?
-        </SubTitle>
-        <p>
-          Det är bevisat att massage minskar sjukskrivningar och förbättrar
-          arbetsklimatet på din arbetsplats. Massage förebygger stress och värk
-          i kroppen som man kan få till exempel av statiska arbetsställningar
-          och tunga lyft.
-        </p>
-        <p>
-          Jag kommer ut till ert företag med bänk, olja och allt som behövs. Det
-          enda som ni behöver ordna är ett rum där vi kan vara. Massage är även
-          en avdragsgill kostnads för företag.
-        </p>
-        <p>
-          Varmt välkommen att{" "}
-          <a href="mailto:sofia@levholm.se">höra av dig</a> till mig för
-          mer information.
-        </p>
+        <SubTitle>Investera i era anställdas välmånde!</SubTitle>
+        <p>Regelbunden massage förebygger stress och överbelastningsskador tillexempel från tunga lyft eller statiska arbetsställningar. När era anställda mår bättre förbätttras även arbetsklimatet och den allmäna trivlsen på arbetsplatsen.</p> 
+
+        <p>Jag erbjuder massage på plats hos er, upplägget anpassas helt efter era behov och hur verksamheten ser ut.</p>
+
+        <p>Massage är en avdragsgill kostad för företag enligt Skatteverkets riktlinjer för friskvård.</p>
+
+        <p>Vill ni veta mer eller boka in ett första tillfälle? Varmt välkommen att <a href="mailto:sofia@levholm.se">höra av er</a>!</p>
       </div>
     </div>
   </Section>
